@@ -30,18 +30,19 @@ var startButton = document.querySelector("#start");
 var questionEl = document.querySelector("#question");
 var startPage = document.querySelector("#startPage");
 var timer = document.querySelector("#timer");
-var ulEl = document.querySelector("ul")
+var ulEl = document.querySelector("#answers")
 var results = document.querySelector("#result");
 var timeLeft = 60;
 var counter = 0;
 var score = 0;
 var targetQuestion = multipleChoices[counter];
-var questionTab = document.querySelector("#questionTab");
 var formField = document.querySelector("form");
-var button = document.querySelector("button");
+var button = document.querySelector("#submit");
 var input = document.querySelector("input");
+var retake = document.querySelector("#retake");
 
 formField.style.display="none";
+retake.style.display = "none";
 
 
 startButton.addEventListener("click", function(){
@@ -115,6 +116,33 @@ var quizOver = function(){
 button.addEventListener("click", function(event){
     event.preventDefault();
     var inputSubmission = input.value;
+
+    
     localStorage.setItem("initials", inputSubmission);
     localStorage.setItem("score", score);
-})
+
+    var highScoresArray = [];
+    var userInitials= localStorage.getItem("initials");
+    var highScore = localStorage.getItem("score");
+    var scoreInitials = {
+        initials: userInitials,
+        score: highScore
+    }
+    highScoresArray.push(scoreInitials);
+    
+    
+    retake.style.display = "block";
+});
+
+
+retake.addEventListener("click", function(){
+    location.reload();
+});
+
+
+/*var highScoresArray = [];
+
+var userInitials= localStorage.getItem("initials");
+var highScore = localStorage.getItem("score");
+
+}*/
