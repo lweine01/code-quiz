@@ -4,6 +4,6 @@ console.log(userInitials);
 
 for (var i = 0; i < userInitials.length; i++){
     var scoreList = document.createElement("li");
-    scoreList.textContent = userInitials[i];
+    scoreList.textContent = userInitials[i].initials + ": " + userInitials[i].score;
     ulEl.appendChild(scoreList);
     }

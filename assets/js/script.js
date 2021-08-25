@@ -1,28 +1,28 @@
 var multipleChoices = [
     {
-        question: "question1",
-        answers: ["a1", "a2", "a3", "a4"],
+        question: "Inside of which HTML element do we put JavaScript?",
+        answers: ["<script>", "<link>", "<javascript>", "<a href>"],
         correctAnswer: 0,
     },
     {
-        question: "question2",
-        answers: ["b1", "b2", "b3", "b4"],
-        correctAnswer: 1,
-    },
-    {
-        question: "question3",
-        answers: ["c1", "c2", "c3", "c4"],
+        question: "Where do you insert JavaScript in HTML?",
+        answers: ["In the <head>", "Top of the <body>", "Bottom of the <body>", "In the <header>"],
         correctAnswer: 2,
     },
     {
-        question: "question4",
-        answers: ["d1", "d2", "d3", "d4"],
+        question: "How do you start a for loop?",
+        answers: ["for(i=0; i < length; i++)", "for(i=0; i++)", "for(var i=0, i <length, i++)", "for(var i=0; i < length; i++)"],
         correctAnswer: 3,
     },
     {
-        question: "question5",
-        answers: ["e1", "e2", "e3", "e4"],
-        correctAnswer: 0,
+        question: "How do you state that x is strictly equal to y?",
+        answers: ["x=y", "x!=y", "x==y", "x===y"],
+        correctAnswer: 3,
+    },
+    {
+        question: "Which one of these is an object?",
+        answers: ["[a, b, c]", "{a:1, b:2, c:3}", "[{a:1}, b, c]", "(a:1, b:2, c:3)"],
+        correctAnswer: 1,
     }
 ]
 
