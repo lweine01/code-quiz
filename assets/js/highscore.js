@@ -1,19 +1,9 @@
-var highScoresElement = document.querySelector("#highScore");
-var highScoresArray = [];
+var userInitials = JSON.parse(localStorage.getItem("user-submission"));
+var ulEl = document.querySelector("ul");
+console.log(userInitials);
 
-var userInitials= localStorage.getItem("initials");
-var highScore = localStorage.getItem("score");
-
-var scoreInitials = {
-    initials: userInitials,
-    score: highScore
-}
-
-highScoresArray.push(scoreInitials);
-
-
-for (var i = 0; i < highScoresArray.length; i++){
+for (var i = 0; i < userInitials.length; i++){
     var scoreList = document.createElement("li");
-    answersEl.textContent = targetQuestion.answers[i];
-    ulEl.appendChild(answersEl);
+    scoreList.textContent = userInitials[i];
+    ulEl.appendChild(scoreList);
     }
