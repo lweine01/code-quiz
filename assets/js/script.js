@@ -100,7 +100,6 @@ var setTimer = function () {
         if (timeLeft <= 0) {
             timeLeft = 0;
             clearInterval(timerInterval);
-            console.log("quizOver");
             quizOver();
         }
         timer.textContent = "Time: " + timeLeft;
