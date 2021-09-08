@@ -6,7 +6,9 @@
 - [Description](#Description)
 - [Screenshots](#Screenshots)
 - [Usage](#Usage)
+- [License](#License)
 - [Language](#language)
+- [Contact](#Contact)
 
 
 ## Description
@@ -17,10 +19,16 @@ Click retake quiz to start again.
 
 ## Screenshots
 ![Code Quiz Home page screenshot](./assets/images/indexss.png)
-![Code Quiz Home page screenshot](./assets/images/highscoresss.png)
+![Code Quiz Highscores screenshot](./assets/images/highscoresss.png)
 
 ## Usage
 This website provides a simple quiz to test the users knowledge of JavaScript.
 
+## License
+MIT
+
 ## Language
 HTML, CSS and Javascript
+
+## Contact
+LauraRWeiner@gmail.com
